@@ -1,0 +1,9 @@
+<% @notes.each do |note| %>
+	<div class="container">
+		<h4><%= note.title %></h4>
+		<p><%= note.content %></p>
+		<p class='note_footer'>
+			<a href='/edit/<%= note.id %>'>edit/remove</a>
+		</p>
+	</div>
+<% end %>
